@@ -18,6 +18,13 @@ Currently these are the available themes:
 
  - **simple**: Base CSS styles that improve upon the look and feel of HTML without being overly opinionated.  It uses Arial, a system font, and is built to be highly readable.
  
+ To start debugging, run the following on the command line:
+ 
+ ```bash
+ npm start
+ ```
+ 
  ## Contributions
  
  Have a new theme or a suggestion of the existing ones?  Put in an issue or pull request. 
+ 
