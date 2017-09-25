@@ -8,6 +8,8 @@ I have been searching for a CSS Framework that can give me consistent styles, im
 
 This project was started from the [TypePlate](http://typeplate.com/) project.  Their consistent typeography and setup helped bootstrap this project.
 
+Check out a [Live Demo](https://notoriousb1t.github.io/outset/)
+
 ## How to Use
 
 This project will come with different themes as starting points.  The CSS folder contains precompiled versions of these themes, whereas, the SCSS folder contains the base source files and a themes folder that you can copy into your own project.
