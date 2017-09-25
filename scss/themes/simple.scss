@@ -1,0 +1,60 @@
+// $Base
+// -------------------------------------//
+// General base styles for type
+//
+// $custom-font               [<"Custom-Font-Name">[, <fallback>]]
+// $font-size                 112.5% converts to an 18px base
+// $font-base                 converts % base value to a px value (16 * (112.5/100) = 18)
+// $font-family               non-font-face stack
+
+$serif-boolean: true !default; 
+$font-family: 'Arial', sans-serif;
+$font-weight: normal !default;
+$font-size: 90 !default;
+$font-base: 16 * ($font-size/100) !default;
+$line-height: 1.65 !default;
+$measure: $font-base * $line-height !default;
+$prefixes: -webkit-, -moz-, -ms-, '' !default;
+$typescale-unit: rem !default; 
+$indent-val: 1.5rem !default;
+
+// $Small-Print
+// -------------------------------------//
+
+$small-print-size: 65% !default;
+
+// $Base-Colors
+// -------------------------------------//
+
+$heading-color: #222 !default;
+$copy-color: #444 !default;
+$border-color: #c5c5c5 !default;
+$border-style: solid !default;
+$border-width: thin !default;
+
+$headings: (
+    h1: round($font-base * 4), 
+    h2: round($font-base * 3.3333), 
+    h3: round($font-base * 2.6667), 
+    h4: round($font-base * 2), 
+    h5: round($font-base * 1.3333), 
+    h6: round($font-base * 1.1667)
+) !default;
+
+$vertical-space: .6rem;
+$horizontal-space: .8rem;
+
+// $Citations
+// -------------------------------------//
+
+$cite-display: block !default;
+$cite-align: right !default;
+$cite-font-size: inherit !default;
+
+// $Small-Caps
+// -------------------------------------//
+
+$smcps-color: gray !default;
+$smcps-weight: 600 !default;
+
+@import '../base/index';

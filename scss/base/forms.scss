@@ -1,0 +1,25 @@
+label,
+button,
+textarea,
+meter,
+progress,
+select,
+input:not([type='radio']) {
+    display: inline-block;
+    font-size: 1rem;
+    padding: #{$vertical-space / 2} #{$horizontal-space / 2};
+    margin: #{$vertical-space / 2} #{$horizontal-space / 2};
+    vertical-align: top;
+}
+ 
+fieldset { 
+    border: $border-style $border-width $border-color; 
+    padding: #{$vertical-space} #{$horizontal-space};
+
+    > legend {
+        padding: #{$vertical-space} #{$horizontal-space};
+    }
+    > legend:empty {
+        padding: 0
+    }
+}

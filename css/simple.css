@@ -1,0 +1,238 @@
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+  color: #222;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-weight: normal;
+  font-family: "Arial", sans-serif;
+  font-size: 90%;
+  line-height: 1.65;
+}
+
+body {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6, p, section, article, dl, pre, header, footer, main, svg, fieldset {
+  padding: 0.6rem 0.8rem;
+}
+
+fieldset {
+  margin: 0.6rem 0.8rem;
+}
+
+h1 {
+  font-size: 4.02778rem;
+}
+
+h2 {
+  font-size: 3.33333rem;
+}
+
+h3 {
+  font-size: 2.63889rem;
+}
+
+h4 {
+  font-size: 2.01389rem;
+}
+
+h5 {
+  font-size: 1.31944rem;
+}
+
+h6 {
+  font-size: 1.18056rem;
+}
+
+small {
+  font-size: 65%;
+}
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre {
+  white-space: pre;
+}
+
+pre > code {
+  word-wrap: normal;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+code {
+  white-space: pre;
+  font-family: monospace;
+}
+
+abbr {
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  -ms-font-variant: small-caps;
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: gray;
+}
+
+abbr[title]:hover {
+  cursor: help;
+}
+
+ol, ul {
+  margin: 1rem 0;
+}
+
+img, video, audio, iframe, canvas {
+  max-width: 100%;
+  max-width: calc(100vw - 1.6rem);
+  width: 100%;
+  margin: 0.6rem 0.8rem;
+}
+
+figure > figcaption {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  table-layout: fixed;
+  width: 100%;
+}
+
+tbody, tfoot, thead {
+  margin: 0.6rem 0.8rem;
+}
+
+table > caption {
+  padding: 0.6rem 0.8rem;
+}
+
+th, td {
+  padding: 0.3rem 0.4rem;
+}
+
+thead th, thead td, tfoot th, tfoot td {
+  padding: 0.6rem 0.4rem;
+  text-align: left;
+}
+
+thead th, thead td {
+  font-weight: bold;
+}
+
+li {
+  padding: 0.3rem 0;
+}
+
+blockquote {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+
+blockquote > cite {
+  align-self: flex-end;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+blockquote + figcaption cite,
+q + figcaption cite {
+  display: block;
+  font-size: inherit;
+  text-align: right;
+}
+
+cite {
+  padding: 0.6rem 0.8rem;
+}
+
+label,
+button,
+textarea,
+meter,
+progress,
+select,
+input:not([type='radio']) {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.3rem 0.4rem;
+  margin: 0.3rem 0.4rem;
+  vertical-align: top;
+}
+
+fieldset {
+  border: solid thin #c5c5c5;
+  padding: 0.6rem 0.8rem;
+}
+
+fieldset > legend {
+  padding: 0.6rem 0.8rem;
+}
+
+fieldset > legend:empty {
+  padding: 0;
+}

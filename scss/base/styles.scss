@@ -1,0 +1,99 @@
+// $Global
+// -------------------------------------//
+
+html {
+    font-weight: $font-weight;
+    font-family: $font-family;
+    font-size: #{$font-size + '%'};
+    line-height: $line-height;
+}
+
+body {
+    word-wrap: break-word;
+    @include hyphens(auto);
+    color: $copy-color; 
+}
+
+
+// Content padding
+// -------------------------------------//
+
+h1, h2, h3, h4, h5, h6, p, section, article, dl, pre, header, footer, main, svg, fieldset {
+    padding: $vertical-space $horizontal-space;
+}
+
+fieldset {
+    margin: $vertical-space $horizontal-space; 
+}
+
+
+// $Headings
+// http://codepen.io/grayghostvisuals/pen/IKsbw
+// -------------------------------------//
+
+@each $h, $size in $headings {
+    #{$h} {
+        @extend %hN;
+        @include typescale(
+      $size,
+      $font-base,
+      $typescale-unit,
+      $measure
+    );
+    }
+}
+
+// $Legal Text
+// -------------------------------------//
+
+small {
+    font-size: $small-print-size;
+}
+
+// $Hyphenation
+// -------------------------------------//
+// @notes;
+// http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+    @include hyphens(none);
+}
+
+// $Codeblocks
+// -------------------------------------//
+
+pre {
+    @include white-space(pre);
+
+    > code {
+        word-wrap: normal;
+        @include white-space(pre-wrap);
+    }
+}
+
+code {
+    @include white-space(pre);
+    font-family: monospace;
+}
+
+// $Smallcaps
+// -------------------------------------//
+
+abbr {
+    @include smallcaps($smcps-color, $smcps-weight);
+    &[title]:hover {
+        cursor: help;
+    }
+}
+
+ol, ul {
+    margin: 1rem 0;
+}

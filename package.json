@@ -1,0 +1,22 @@
+{
+  "name": "classless",
+  "version": "0.0.0",
+  "description": "This CSS frameworks lacks class",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --output-style expanded ./scss/themes/simple.scss ./css/simple.css",
+    "watch": "node-sass --output-style expanded -w -r ./scss/themes/simple.scss ./css/simple.css",
+    "serve": "lite-server -c config/bs-config.json",
+    "start": "concurrently \"npm run watch\" \"npm run serve\""
+  },
+  "keywords": [
+    "CSS"
+  ],
+  "author": "Christopher Wallis <christopher.j.wallis@gmail.com> (http://notoriousb1t.com)",
+  "license": "MIT",
+  "devDependencies": {    
+    "concurrently": "^3.5.0",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.5.3"
+  }
+}

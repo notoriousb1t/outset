@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Test Page</title>
+    <link id="currentTheme" rel="stylesheet" href="./css/simple.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <style>
+        /* styles for this page */
+
+        .theme-switcher {
+            position: fixed;
+            z-index: 9000;
+            right: 1rem;
+            top: 1rem;
+        }
+
+        .placeholder {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+
+        .placeholder::before {
+            content: attr(title);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .limit-size {
+            max-width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="theme-switcher">
+        <select>
+            <option value="#">None</option>                
+            <option selected="selected" value="css/simple.css">Simple</option>
+        </select>
+    </div>
+
+    <h1>HTML5 Test Page</h1>
+    <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems
+        and frameworks.</p>
+
+    <section>
+        <h2>Typography</h2>
+        <fieldset>
+            <legend>Headings and content</legend>
+            <h1>Heading 1</h1>
+
+            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a
+                discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.
+                Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing,
+                used to organize longer prose. A paragraph (from the Greek paragraphos, “to write beside” or “written beside”)
+                is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists
+                of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected
+                part of formal writing, used to organize longer prose.</p>
+
+            <h2>Heading 2</h2>
+
+            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a
+                discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.
+                Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing,
+                used to organize longer prose. A paragraph (from the Greek paragraphos, “to write beside” or “written beside”)
+                is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists
+                of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected
+                part of formal writing, used to organize longer prose.</p>
+
+            <h3>Heading 3</h3>
+
+            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a
+                discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.
+                Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing,
+                used to organize longer prose. A paragraph (from the Greek paragraphos, “to write beside” or “written beside”)
+                is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists
+                of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected
+                part of formal writing, used to organize longer prose.</p>
+
+            <h4>Heading 4</h4>
+
+            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a
+                discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.
+                Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing,
+                used to organize longer prose. A paragraph (from the Greek paragraphos, “to write beside” or “written beside”)
+                is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists
+                of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected
+                part of formal writing, used to organize longer prose.</p>
+
+            <h5>Heading 5</h5>
+
+            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a
+                discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.
+                Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing,
+                used to organize longer prose. A paragraph (from the Greek paragraphos, “to write beside” or “written beside”)
+                is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists
+                of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected
+                part of formal writing, used to organize longer prose.</p>
+
+            <h6>Heading 6</h6>
+
+            <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a
+                discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences.
+                Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing,
+                used to organize longer prose. A paragraph (from the Greek paragraphos, “to write beside” or “written beside”)
+                is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists
+                of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected
+                part of formal writing, used to organize longer prose.</p>
+        </fieldset>
+
+        <h3>Inline Elements</h3>
+        <div>
+            <legend>Inline Elements</legend>
+            <p><a href="#!">This is a text link</a>.</p>
+            <p><strong>Strong is used to indicate strong importance.</strong></p>
+            <p><em>This text has added emphasis.</em></p>
+            <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+            <p>The <i>i element</i> is text that is offset from the normal text.</p>
+            <p>The
+                <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+            <p>
+                <del>This text is deleted</del> and
+                <ins>This text is inserted</ins>.</p>
+            <p>
+                <s>This text has a strikethrough</s>.</p>
+            <p>Superscript<sup>®</sup>.</p>
+            <p>Subscript for things like H<sub>2</sub>O.</p>
+            <p><small>This small text is small for for fine print, etc.</small></p>
+            <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+            <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">
+                            This text is a short inline quotation. <cite>-This is a citation.</cite></q></p>
+            <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+            <p>The
+                <mark>mark element</mark> indicates a highlight.</p>
+            <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+            <p>The time element:
+                <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
+            </p>
+        </div>
+
+        <h3>Blockquotes</h3>
+        <div>
+            <blockquote class="limit-size">
+                <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that
+                    is set off from the main text as a paragraph, or block of text.</p>
+                <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation.
+                    It may or may not include a citation, usually placed at the bottom.</p>
+                <cite>- Said no one, ever.</cite>
+            </blockquote>
+        </div>
+    </section>
+    <section>
+        <h2>Data Elements</h2>
+        <div>
+            <h3>Definition list</h3>
+            <dl>
+                <dt>Definition List Title</dt>
+                <dd>This is a definition list division.</dd>
+            </dl>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+            <h3> Table </h3>
+            <table>
+                <caption>A caption describing the contents of the table</caption>
+                <thead>
+                    <tr>
+                        <th>Table Heading 1</th>
+                        <th>Table Heading 2</th>
+                        <th>Table Heading 3</th>
+                        <th>Table Heading 4</th>
+                        <th>Table Heading 5</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Table Footer 1</th>
+                        <th>Table Footer 2</th>
+                        <th>Table Footer 3</th>
+                        <th>Table Footer 4</th>
+                        <th>Table Footer 5</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Table Cell 1</td>
+                        <td>Table Cell 2</td>
+                        <td>Table Cell 3</td>
+                        <td>Table Cell 4</td>
+                        <td>Table Cell 5</td>
+                    </tr>
+                    <tr>
+                        <td>Table Cell 1</td>
+                        <td>Table Cell 2</td>
+                        <td>Table Cell 3</td>
+                        <td>Table Cell 4</td>
+                        <td>Table Cell 5</td>
+                    </tr>
+                    <tr>
+                        <td>Table Cell 1</td>
+                        <td>Table Cell 2</td>
+                        <td>Table Cell 3</td>
+                        <td>Table Cell 4</td>
+                        <td>Table Cell 5</td>
+                    </tr>
+                    <tr>
+                        <td>Table Cell 1</td>
+                        <td>Table Cell 2</td>
+                        <td>Table Cell 3</td>
+                        <td>Table Cell 4</td>
+                        <td>Table Cell 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h3>Code</h3>
+        <div>
+            <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
+            <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
+            <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+    </section>
+    <section>
+        <h3>Pre-formatted text</h3>
+        <pre>P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~ </pre>
+        </div>
+    </section>
+    <section>
+        <h3>Embedded Content</h3>
+        
+        <h4>Video</h4>
+        <video title="video" controls="" class="placeholder limit-size"></video>
+        
+        <h4>Canvas</h4>
+        <canvas title="canvas" class="placeholder limit-size"></canvas>
+        
+        <h4>Image</h4>
+        <figure class="limit-size">
+            <img src="https://unsplash.it/350/200/?image=1042" class="limit-size" alt="Image alt text">
+            <figcaption>Here is a caption for this image.</figcaption>
+        </figure>
+
+        <h4>SVG</h4>
+        <svg class="limit-size">
+            <circle cx="50" cy="50" r="100" fill="#1fa3ec"></circle>
+        </svg>
+        
+        <h4>Audio</h4>
+        <audio controls="" class="limit-size">audio</audio>
+    </section>
+    <section>
+        <h2>Forms</h2>
+        <fieldset id="forms__input">
+                <legend>Input fields</legend>
+                <div>
+                    <label for="input__text">Text Input</label>
+                    <input id="input__text" type="text" placeholder="Text Input">
+                </div>
+                <div>
+                    <label for="input__password">Password</label>
+                    <input id="input__password" type="password" placeholder="Type your Password">
+                </div>
+                <div>
+                    <label for="input__webaddress">Web Address</label>
+                    <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+                    <button>Go</button>
+                </div>
+                <div>
+                    <label for="input__emailaddress">Email Address</label>
+                    <input id="input__emailaddress" type="email" placeholder="name@email.com">
+                </div>
+                <div>
+                    <label for="input__phone">Phone Number</label>
+                    <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+                </div>
+                <div>
+                    <label for="input__text2">Number Input</label>
+                    <input id="input__text2" type="number" placeholder="Enter a Number">
+                </div>
+            </fieldset>
+            <fieldset id="forms__textareas">
+                <legend>Textareas</legend>
+                <div>
+                    <label for="textarea">Textarea</label>
+                    <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                </div>
+            </fieldset>
+            <fieldset id="forms__html5">
+                <legend>HTML5 inputs</legend>
+                <div>
+                    <label for="ic">Color input</label>
+                    <input type="color" id="ic" value="#000000">
+                </div>
+                <div>
+                    <label for="in">Number input</label>
+                    <input type="number" id="in" min="0" max="10" value="5">
+                </div>
+                <div>
+                    <label for="ir">Range input</label>
+                    <input type="range" id="ir" value="10">
+                </div>
+                <div>
+                    <label for="idd">Date input</label>
+                    <input type="date" id="idd" value="1970-01-01">
+                </div>
+                <div>
+                    <label for="idm">Month input</label>
+                    <input type="month" id="idm" value="1970-01">
+                </div>
+                <div>
+                    <label for="idw">Week input</label>
+                    <input type="week" id="idw" value="1970-W01">
+                </div>
+                <div>
+                    <label for="idt">Datetime input</label>
+                    <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+                </div>
+                <div>
+                    <label for="idtl">Datetime-local input</label>
+                    <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+                </div>
+            </fieldset>
+            <fieldset id="forms__select">
+                <legend>Dropdowns</legend>
+                <div>
+                    <label for="select">Select</label>
+                    <select id="select">
+                    <optgroup label="Option Group">
+                        <option>Option One</option>
+                        <option>Option Two</option>
+                        <option>Option Three</option>
+                    </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset id="forms__checkbox">
+                <legend>Checkboxes</legend>
+                <div><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></div>
+                <div><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></div>
+                <div><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></div>
+            </fieldset>
+
+            <fieldset id="forms__radio">
+                <legend>Radio buttons</legend>
+                <div><label for="radio1"><input id="radio1" name="radio" type="radio"  checked="checked"> Option 1</label></div>
+                <div><label for="radio2"><input id="radio2" name="radio" type="radio" > Option 2</label></div>
+                <div><label for="radio3"><input id="radio3" name="radio" type="radio" > Option 3</label></div>
+            </fieldset>
+
+            <fieldset id="forms__action">
+                <legend>Action buttons</legend>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="button">Button</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" disabled>Disabled</button>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Indicators</legend>
+                <div>
+                    <label>Progress</label>
+                    <progress></progress>
+                </div>
+                <div>
+                    <label>Meter</label>
+                    <meter value="2" min="0" max="10"></meter>
+                </div>
+            </fieldset>
+    </section> 
+    <script>
+        (function () {
+            'use strict';
+            var currentTheme = document.getElementById('currentTheme')
+            var themeSelect = document.querySelector('.theme-switcher select')
+
+            themeSelect.addEventListener('change', function () {
+                var selected = Array.prototype.filter.call(themeSelect.options, function (option) {
+                    return !!option.selected
+                });
+
+                if (!selected.length) {
+                    return
+                }
+
+                currentTheme.setAttribute('href', selected[0].value)
+            })
+        })()
+    </script>
+</body>
+
+</html>

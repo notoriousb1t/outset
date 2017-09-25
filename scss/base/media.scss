@@ -1,0 +1,10 @@
+img, video, audio, iframe, canvas {
+    max-width: 100%;
+    max-width: calc(100vw - #{$horizontal-space * 2});
+    width: 100%;     
+    margin: #{$vertical-space} #{$horizontal-space};
+}
+
+figure > figcaption {
+    text-align: center;
+}

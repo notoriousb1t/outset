@@ -1,0 +1,29 @@
+blockquote {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: $indent-val;
+
+    > cite {
+        align-self: flex-end;
+    }
+}
+
+blockquote,
+q {
+    quotes: none;
+
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
+
+    + figcaption cite {
+        @include cite-style($cite-display, $cite-align, $cite-font-size);
+    }
+}
+
+cite {
+    padding: $vertical-space $horizontal-space;
+}

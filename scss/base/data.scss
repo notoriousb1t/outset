@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+	border-spacing: 0;
+    max-width: 100%;
+    table-layout: fixed;
+    width: 100%;
+}
+
+tbody, tfoot, thead { 
+    margin: #{$vertical-space} #{$horizontal-space};
+}
+
+table > caption {
+    padding: #{$vertical-space} #{$horizontal-space};
+}
+
+th, td {
+    padding: #{$vertical-space / 2} #{$horizontal-space / 2};
+}
+
+thead, tfoot {
+    th, td {
+        padding: #{$vertical-space} #{$horizontal-space / 2}; 
+        text-align: left;
+    }
+}
+
+thead {
+    th, td { 
+        font-weight: bold; 
+    }
+}
+
+li {
+    padding: #{$vertical-space / 2} 0;
+}
