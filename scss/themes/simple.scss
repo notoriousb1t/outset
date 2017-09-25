@@ -6,15 +6,15 @@
 // $font-size                 112.5% converts to an 18px base
 // $font-base                 converts % base value to a px value (16 * (112.5/100) = 18)
 // $font-family               non-font-face stack
-
-$serif-boolean: true !default; 
+ 
 $font-family: 'Arial', sans-serif;
 $font-weight: normal !default;
 $font-size: 90 !default;
 $font-base: 16 * ($font-size/100) !default;
 $line-height: 1.65 !default;
-$measure: $font-base * $line-height !default;
-$prefixes: -webkit-, -moz-, -ms-, '' !default;
+
+
+$measure: $font-base * $line-height !default;  
 $typescale-unit: rem !default; 
 $indent-val: 1.5rem !default;
 
@@ -53,7 +53,6 @@ $cite-font-size: inherit !default;
 
 // $Small-Caps
 // -------------------------------------//
-
 $smcps-color: gray !default;
 $smcps-weight: 600 !default;
 

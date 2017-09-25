@@ -34,12 +34,12 @@ fieldset {
 @each $h, $size in $headings {
     #{$h} {
         @extend %hN;
-        @include typescale(
-      $size,
-      $font-base,
-      $typescale-unit,
-      $measure
-    );
+        
+        @if $typescale-unit == rem or $typescale-unit == em {
+            font-size: context-calc($size, $font-base, $typescale-unit);
+        } @else {
+            font-size: $size * 1px;
+        }
     }
 }
 

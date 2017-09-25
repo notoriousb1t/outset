@@ -4,19 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML5 Test Page</title>
+    <title>Outset - CSS Starter Kit</title>
     <link id="currentTheme" rel="stylesheet" href="./css/simple.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <style>
         /* styles for this page */
-
+        body {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1024px;
+        }
         .theme-switcher {
             position: fixed;
             z-index: 9000;
             right: 1rem;
             top: 1rem;
         }
-
         .placeholder {
             background-color: rgba(0, 0, 0, 0.5);
             position: relative;
@@ -27,10 +30,6 @@
             height: 100%;
             width: 100%;
             z-index: -1;
-        }
-
-        .limit-size {
-            max-width: 700px;
         }
     </style>
 </head>
@@ -43,9 +42,11 @@
         </select>
     </div>
 
-    <h1>HTML5 Test Page</h1>
-    <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems
-        and frameworks.</p>
+    <h1>Outset</h1>
+    <p>
+        This starter kit is meant to make it easy to get started building a webpage without adopting a huge framework and a specific
+        design methodology. This To try out different themes, select a new theme from the top right-hand corner.
+    </p>
 
     <section>
         <h2>Typography</h2>
@@ -144,7 +145,7 @@
 
         <h3>Blockquotes</h3>
         <div>
-            <blockquote class="limit-size">
+            <blockquote>
                 <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that
                     is set off from the main text as a paragraph, or block of text.</p>
                 <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation.
@@ -247,148 +248,148 @@ p q r s t u v w x y z { | } ~ </pre>
     </section>
     <section>
         <h3>Embedded Content</h3>
-        
+
         <h4>Video</h4>
-        <video title="video" controls="" class="placeholder limit-size"></video>
-        
+        <video title="video" controls="" class="placeholder "></video>
+
         <h4>Canvas</h4>
-        <canvas title="canvas" class="placeholder limit-size"></canvas>
-        
+        <canvas title="canvas" class="placeholder "></canvas>
+
         <h4>Image</h4>
-        <figure class="limit-size">
-            <img src="https://unsplash.it/350/200/?image=1042" class="limit-size" alt="Image alt text">
+        <figure>
+            <img src="https://unsplash.it/350/200/?image=1042" alt="Image alt text">
             <figcaption>Here is a caption for this image.</figcaption>
         </figure>
 
         <h4>SVG</h4>
-        <svg class="limit-size">
+        <svg>
             <circle cx="50" cy="50" r="100" fill="#1fa3ec"></circle>
         </svg>
-        
+
         <h4>Audio</h4>
-        <audio controls="" class="limit-size">audio</audio>
+        <audio controls="">audio</audio>
     </section>
     <section>
         <h2>Forms</h2>
         <fieldset id="forms__input">
-                <legend>Input fields</legend>
-                <div>
-                    <label for="input__text">Text Input</label>
-                    <input id="input__text" type="text" placeholder="Text Input">
-                </div>
-                <div>
-                    <label for="input__password">Password</label>
-                    <input id="input__password" type="password" placeholder="Type your Password">
-                </div>
-                <div>
-                    <label for="input__webaddress">Web Address</label>
-                    <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
-                    <button>Go</button>
-                </div>
-                <div>
-                    <label for="input__emailaddress">Email Address</label>
-                    <input id="input__emailaddress" type="email" placeholder="name@email.com">
-                </div>
-                <div>
-                    <label for="input__phone">Phone Number</label>
-                    <input id="input__phone" type="tel" placeholder="(999) 999-9999">
-                </div>
-                <div>
-                    <label for="input__text2">Number Input</label>
-                    <input id="input__text2" type="number" placeholder="Enter a Number">
-                </div>
-            </fieldset>
-            <fieldset id="forms__textareas">
-                <legend>Textareas</legend>
-                <div>
-                    <label for="textarea">Textarea</label>
-                    <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
-                </div>
-            </fieldset>
-            <fieldset id="forms__html5">
-                <legend>HTML5 inputs</legend>
-                <div>
-                    <label for="ic">Color input</label>
-                    <input type="color" id="ic" value="#000000">
-                </div>
-                <div>
-                    <label for="in">Number input</label>
-                    <input type="number" id="in" min="0" max="10" value="5">
-                </div>
-                <div>
-                    <label for="ir">Range input</label>
-                    <input type="range" id="ir" value="10">
-                </div>
-                <div>
-                    <label for="idd">Date input</label>
-                    <input type="date" id="idd" value="1970-01-01">
-                </div>
-                <div>
-                    <label for="idm">Month input</label>
-                    <input type="month" id="idm" value="1970-01">
-                </div>
-                <div>
-                    <label for="idw">Week input</label>
-                    <input type="week" id="idw" value="1970-W01">
-                </div>
-                <div>
-                    <label for="idt">Datetime input</label>
-                    <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
-                </div>
-                <div>
-                    <label for="idtl">Datetime-local input</label>
-                    <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
-                </div>
-            </fieldset>
-            <fieldset id="forms__select">
-                <legend>Dropdowns</legend>
-                <div>
-                    <label for="select">Select</label>
-                    <select id="select">
+            <legend>Input fields</legend>
+            <div>
+                <label for="input__text">Text Input</label>
+                <input id="input__text" type="text" placeholder="Text Input">
+            </div>
+            <div>
+                <label for="input__password">Password</label>
+                <input id="input__password" type="password" placeholder="Type your Password">
+            </div>
+            <div>
+                <label for="input__webaddress">Web Address</label>
+                <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+                <button>Go</button>
+            </div>
+            <div>
+                <label for="input__emailaddress">Email Address</label>
+                <input id="input__emailaddress" type="email" placeholder="name@email.com">
+            </div>
+            <div>
+                <label for="input__phone">Phone Number</label>
+                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+            </div>
+            <div>
+                <label for="input__text2">Number Input</label>
+                <input id="input__text2" type="number" placeholder="Enter a Number">
+            </div>
+        </fieldset>
+        <fieldset id="forms__textareas">
+            <legend>Textareas</legend>
+            <div>
+                <label for="textarea">Textarea</label>
+                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+            </div>
+        </fieldset>
+        <fieldset id="forms__html5">
+            <legend>HTML5 inputs</legend>
+            <div>
+                <label for="ic">Color input</label>
+                <input type="color" id="ic" value="#000000">
+            </div>
+            <div>
+                <label for="in">Number input</label>
+                <input type="number" id="in" min="0" max="10" value="5">
+            </div>
+            <div>
+                <label for="ir">Range input</label>
+                <input type="range" id="ir" value="10">
+            </div>
+            <div>
+                <label for="idd">Date input</label>
+                <input type="date" id="idd" value="1970-01-01">
+            </div>
+            <div>
+                <label for="idm">Month input</label>
+                <input type="month" id="idm" value="1970-01">
+            </div>
+            <div>
+                <label for="idw">Week input</label>
+                <input type="week" id="idw" value="1970-W01">
+            </div>
+            <div>
+                <label for="idt">Datetime input</label>
+                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+            </div>
+            <div>
+                <label for="idtl">Datetime-local input</label>
+                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+            </div>
+        </fieldset>
+        <fieldset id="forms__select">
+            <legend>Dropdowns</legend>
+            <div>
+                <label for="select">Select</label>
+                <select id="select">
                     <optgroup label="Option Group">
                         <option>Option One</option>
                         <option>Option Two</option>
                         <option>Option Three</option>
                     </optgroup>
                     </select>
-                </div>
-            </fieldset>
+            </div>
+        </fieldset>
 
-            <fieldset id="forms__checkbox">
-                <legend>Checkboxes</legend>
-                <div><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></div>
-                <div><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></div>
-                <div><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></div>
-            </fieldset>
+        <fieldset id="forms__checkbox">
+            <legend>Checkboxes</legend>
+            <div><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></div>
+            <div><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></div>
+            <div><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></div>
+        </fieldset>
 
-            <fieldset id="forms__radio">
-                <legend>Radio buttons</legend>
-                <div><label for="radio1"><input id="radio1" name="radio" type="radio"  checked="checked"> Option 1</label></div>
-                <div><label for="radio2"><input id="radio2" name="radio" type="radio" > Option 2</label></div>
-                <div><label for="radio3"><input id="radio3" name="radio" type="radio" > Option 3</label></div>
-            </fieldset>
+        <fieldset id="forms__radio">
+            <legend>Radio buttons</legend>
+            <div><label for="radio1"><input id="radio1" name="radio" type="radio"  checked="checked"> Option 1</label></div>
+            <div><label for="radio2"><input id="radio2" name="radio" type="radio" > Option 2</label></div>
+            <div><label for="radio3"><input id="radio3" name="radio" type="radio" > Option 3</label></div>
+        </fieldset>
 
-            <fieldset id="forms__action">
-                <legend>Action buttons</legend>
-                <div>
-                    <button type="submit">Submit</button>
-                    <button type="button">Button</button>
-                    <button type="reset">Reset</button>
-                    <button type="button" disabled>Disabled</button>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Indicators</legend>
-                <div>
-                    <label>Progress</label>
-                    <progress></progress>
-                </div>
-                <div>
-                    <label>Meter</label>
-                    <meter value="2" min="0" max="10"></meter>
-                </div>
-            </fieldset>
-    </section> 
+        <fieldset id="forms__action">
+            <legend>Action buttons</legend>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="button">Button</button>
+                <button type="reset">Reset</button>
+                <button type="button" disabled>Disabled</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Indicators</legend>
+            <div>
+                <label>Progress</label>
+                <progress></progress>
+            </div>
+            <div>
+                <label>Meter</label>
+                <meter value="2" min="0" max="10"></meter>
+            </div>
+        </fieldset>
+    </section>
     <script>
         (function () {
             'use strict';
