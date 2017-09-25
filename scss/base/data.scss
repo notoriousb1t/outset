@@ -31,6 +31,10 @@ thead {
     }
 }
 
+ol, ul {
+    margin: 1rem 0;
+}
+
 li {
     padding: #{$vertical-space / 2} 0;
 }

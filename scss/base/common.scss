@@ -35,10 +35,12 @@ fieldset {
     #{$h} {
         @extend %hN;
         
-        @if $typescale-unit == rem or $typescale-unit == em {
-            font-size: context-calc($size, $font-base, $typescale-unit);
+        @if $default-unit == rem or $default-unit == em {
+            font-size: context-calc($size, $font-base, $default-unit); 
+            margin-top: context-calc($size, ($font-base * 4), $default-unit);
         } @else {
-            font-size: $size * 1px;
+            font-size: $size * 1px; 
+            margin-top: ($size * 4) * 1px;
         }
     }
 }
@@ -67,23 +69,6 @@ var {
     @include hyphens(none);
 }
 
-// $Codeblocks
-// -------------------------------------//
-
-pre {
-    @include white-space(pre);
-
-    > code {
-        word-wrap: normal;
-        @include white-space(pre-wrap);
-    }
-}
-
-code {
-    @include white-space(pre);
-    font-family: monospace;
-}
-
 // $Smallcaps
 // -------------------------------------//
 
@@ -92,8 +77,4 @@ abbr {
     &[title]:hover {
         cursor: help;
     }
-}
-
-ol, ul {
-    margin: 1rem 0;
 }

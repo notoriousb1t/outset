@@ -2,7 +2,7 @@ blockquote {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding-left: $indent-val;
+    padding-left: $horizontal-space * 2;
 
     > cite {
         align-self: flex-end;

@@ -18,7 +18,7 @@ textarea {
 }
  
 fieldset { 
-    border: $border-style $border-width $border-color; 
+    border: $fieldset-border-style $fieldset-border-width $fieldset-border-color; 
     padding: #{$vertical-space} #{$horizontal-space};
 
     > legend {

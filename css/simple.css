@@ -58,26 +58,32 @@ fieldset {
 
 h1 {
   font-size: 4.02778rem;
+  margin-top: 1.00694rem;
 }
 
 h2 {
   font-size: 3.33333rem;
+  margin-top: 0.83333rem;
 }
 
 h3 {
   font-size: 2.63889rem;
+  margin-top: 0.65972rem;
 }
 
 h4 {
   font-size: 2.01389rem;
+  margin-top: 0.50347rem;
 }
 
 h5 {
   font-size: 1.31944rem;
+  margin-top: 0.32986rem;
 }
 
 h6 {
   font-size: 1.18056rem;
+  margin-top: 0.29514rem;
 }
 
 small {
@@ -99,21 +105,6 @@ var {
   hyphens: none;
 }
 
-pre {
-  white-space: pre;
-}
-
-pre > code {
-  word-wrap: normal;
-  white-space: -moz-pre-wrap;
-  white-space: pre-wrap;
-}
-
-code {
-  white-space: pre;
-  font-family: monospace;
-}
-
 abbr {
   -webkit-font-variant: small-caps;
   -moz-font-variant: small-caps;
@@ -126,10 +117,6 @@ abbr {
 
 abbr[title]:hover {
   cursor: help;
-}
-
-ol, ul {
-  margin: 1rem 0;
 }
 
 img, video, audio, iframe, canvas {
@@ -172,6 +159,10 @@ thead th, thead td {
   font-weight: bold;
 }
 
+ol, ul {
+  margin: 1rem 0;
+}
+
 li {
   padding: 0.3rem 0;
 }
@@ -180,7 +171,7 @@ blockquote {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding-left: 1.5rem;
+  padding-left: 1.6rem;
 }
 
 blockquote > cite {
@@ -239,4 +230,19 @@ fieldset > legend {
 
 fieldset > legend:empty {
   padding: 0;
+}
+
+pre {
+  white-space: pre;
+}
+
+pre > code {
+  word-wrap: normal;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+code {
+  white-space: pre;
+  font-family: monospace;
 }
