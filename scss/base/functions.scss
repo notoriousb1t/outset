@@ -1,9 +1,0 @@
-// $Context Calculator
-// -------------------------------------//
-// target / context = result
-//
-// @example             p { font-size: context-calc(24, 16, px, 18 * 1.65); }
-
-@function context-calc($scale, $base, $value) {
-    @return ($scale/$base) + $value;
-}

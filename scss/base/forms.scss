@@ -7,8 +7,8 @@ select,
 input:not([type='radio']) {
     display: inline-block;
     font-size: 1rem;
-    padding: #{$vertical-space / 2} #{$horizontal-space / 2};
-    margin: #{$vertical-space / 2} #{$horizontal-space / 2};
+    padding: #{$v-padding / 2} #{$h-padding / 2};
+    margin: #{$v-margin / 2} #{$h-margin / 2};
     vertical-align: middle;
 }
 
@@ -16,13 +16,18 @@ textarea {
     // align textarea to the top
     vertical-align: top;
 }
+
+button {
+    border: $button-border-style $button-border-width $button-border-color;
+    background-color: $button-background-color;
+}
  
 fieldset { 
     border: $fieldset-border-style $fieldset-border-width $fieldset-border-color; 
-    padding: #{$vertical-space} #{$horizontal-space};
+    padding: #{$v-padding} #{$h-padding};
 
     > legend {
-        padding: #{$vertical-space} #{$horizontal-space};
+        padding: #{$v-padding} #{$h-padding};
     }
     > legend:empty {
         padding: 0

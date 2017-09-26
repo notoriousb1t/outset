@@ -1,13 +1,13 @@
-pre {
-    @include white-space(pre);
+pre { 
+    white-space: pre;
 
     > code {
-        word-wrap: normal;
-        @include white-space(pre-wrap);
+        word-wrap: normal; 
+        white-space: pre-wrap;
     }
 }
 
-code {
-    @include white-space(pre);
+code { 
+    white-space: pre;
     font-family: monospace;
 }

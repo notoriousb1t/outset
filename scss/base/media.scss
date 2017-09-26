@@ -1,8 +1,8 @@
-img, video, audio, iframe, canvas {
+svg, img, video, audio, iframe, canvas {
     max-width: 100%;
-    max-width: calc(100vw - #{$horizontal-space * 2});
+    max-width: calc(100vw - #{$h-margin * 2});
     width: 100%;     
-    margin: #{$vertical-space} #{$horizontal-space};
+    margin: #{$v-margin} #{$h-margin};
 }
 
 figure > figcaption {

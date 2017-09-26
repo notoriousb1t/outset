@@ -2,7 +2,7 @@ blockquote {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding-left: $horizontal-space * 2;
+    padding-left: $h-padding * 2;
 
     > cite {
         align-self: flex-end;
@@ -19,11 +19,13 @@ q {
         content: none;
     }
 
-    + figcaption cite {
-        @include cite-style($cite-display, $cite-align, $cite-font-size);
+    + figcaption cite { 
+        display: $cite-display;
+        font-size: $cite-font-size;
+        text-align: $cite-align;
     }
 }
 
 cite {
-    padding: $vertical-space $horizontal-space;
+    padding: $v-padding $h-padding;
 }

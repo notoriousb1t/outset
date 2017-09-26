@@ -6,21 +6,21 @@ table {
     width: 100%;
 }
 
-tbody, tfoot, thead { 
-    margin: #{$vertical-space} #{$horizontal-space};
+table, tbody, tfoot, thead { 
+    margin: #{$v-margin} #{$h-margin};
 }
 
 table > caption {
-    padding: #{$vertical-space} #{$horizontal-space};
+    padding: #{$v-padding} #{$h-padding};
 }
 
 th, td {
-    padding: #{$vertical-space / 2} #{$horizontal-space / 2};
+    padding: #{$v-padding / 2} #{$h-padding / 2};
 }
 
 thead, tfoot {
     th, td {
-        padding: #{$vertical-space} #{$horizontal-space / 2}; 
+        padding: #{$v-padding} #{$h-padding / 2}; 
         text-align: left;
     }
 }
@@ -31,10 +31,14 @@ thead {
     }
 }
 
-ol, ul {
+dl {
+    padding: #{$v-padding} #{$h-padding};
+}
+
+ol, ul, dl {
     margin: 1rem 0;
 }
 
 li {
-    padding: #{$vertical-space / 2} 0;
+    padding: #{$v-padding / 2} 0;
 }

@@ -9,16 +9,23 @@ $line-height: 1.65 !default;
 
 // spacing
 // -------------------------------------//
-$vertical-space: .6rem;
-$horizontal-space: .8rem;  
-$default-unit: rem !default;
+$v-padding: .6rem;
+$h-padding: .8rem;  
+$v-margin: .6rem;
+$h-margin: .8rem;
 
 
 // color palette
 // -------------------------------------//
-$heading-color: #222 !default;
-$copy-color: #444 !default;
+$heading-color: #222;
+$copy-color: #444;
 
+// buttons
+// -------------------------------------//
+$button-background-color: #eeeeee;  
+$button-border-color: #929292;  
+$button-border-style: solid;  
+$button-border-width:thin;  
 
 // headers
 // -------------------------------------//

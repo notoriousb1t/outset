@@ -6,11 +6,14 @@ html {
     font-family: $font-family;
     font-size: #{$font-size + '%'};
     line-height: $line-height;
-}
+} 
 
 body {
-    word-wrap: break-word;
-    @include hyphens(auto);
+    word-wrap: break-word; 
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
     color: $copy-color; 
 }
 
@@ -18,30 +21,38 @@ body {
 // Content padding
 // -------------------------------------//
 
-h1, h2, h3, h4, h5, h6, p, section, article, dl, pre, header, footer, main, svg, fieldset {
-    padding: $vertical-space $horizontal-space;
+h1, h2, h3, h4, h5, h6, p, pre, header, footer, main {
+    padding: $v-padding $h-padding;
 }
 
 fieldset {
-    margin: $vertical-space $horizontal-space; 
+    margin: $v-margin $h-margin; 
 }
 
+// $Headings
+// https://github.com/typeplate/starter-kit/issues/27
+// -------------------------------------//
+// Props to Harry Roberts for this trick.
+//
+// @notes
+// optimizeLegibility           Enables ligatures and kerning
+// single line height           Fixes large spaces when a heading wraps two lines
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin-top: 0;
+    color: $heading-color;
+}
 
 // $Headings
 // http://codepen.io/grayghostvisuals/pen/IKsbw
 // -------------------------------------//
 
 @each $h, $size in $headings {
-    #{$h} {
-        @extend %hN;
-        
-        @if $default-unit == rem or $default-unit == em {
-            font-size: context-calc($size, $font-base, $default-unit); 
-            margin-top: context-calc($size, ($font-base * 4), $default-unit);
-        } @else {
-            font-size: $size * 1px; 
-            margin-top: ($size * 4) * 1px;
-        }
+    #{$h} { 
+        font-size: #{$size/$font-base}rem;
+        margin-top: #{$size/($font-base * 4)}rem;
     }
 }
 
@@ -65,15 +76,24 @@ code,
 kbd,
 q,
 samp,
-var {
-    @include hyphens(none);
+var { 
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
 }
 
 // $Smallcaps
 // -------------------------------------//
 
-abbr {
-    @include smallcaps($smcps-color, $smcps-weight);
+abbr { 
+    -webkit-font-variant: small-caps;
+    -moz-font-variant: small-caps;
+    -ms-font-variant: small-caps;
+    font-variant: small-caps;
+    font-weight: $smcps-weight;
+    text-transform: lowercase;
+    color: $smcps-color;
     &[title]:hover {
         cursor: help;
     }
