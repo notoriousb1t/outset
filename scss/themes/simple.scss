@@ -1,13 +1,14 @@
-$base-font-percent: 90; // base percent of document font size
+// base percent of document font size
+$base-font-percent: 90; 
 
-/* content */
+//* content */
 $base-font-family: "Arial", sans-serif;
 $base-font-weight: normal;
 $font-base: 16 * ($base-font-percent/100);
 $small-caps-color: gray;
 $copy-color: #444;
 
-/* headings */
+//* headings */
 $heading-color: #222;
 $heading-font-family: "Arial", san-serif;
 $heading-font-sizes: (
@@ -23,33 +24,33 @@ $line-height: 1.65;
 $small-caps-weight: 600;
 $small-print-size: 0.65em;
 
-/* whitespace */
+//* whitespace */
 $v-padding: 0.6rem;
 $h-padding: 0.8rem;
 $v-margin: 0.6rem;
 $h-margin: 0.8rem;
 
-/* button styles */
+//* button styles */
 $button-background-color: #eeeeee;
 $button-border-color: #929292;
 $button-border-style: solid;
 $button-border-width: thin;
 
-/* input styles */
+//* input styles */
 $input-background-color: #ffffff;
 $input-border-color: #929292;
 $input-border-style: solid;
 $input-border-width: thin;
 
-/* cite styles */
+//* cite styles */
 $cite-display: block;
 $cite-align: right;
 $cite-font-size: inherit;
 
-/* fieldset styles */
+//* fieldset styles */
 $fieldset-border-color: #c5c5c5;
 $fieldset-border-style: solid;
 $fieldset-border-width: thin;
 
-/* import styles, must come last */
+//* import styles, must come last */
 @import "../base/_index";

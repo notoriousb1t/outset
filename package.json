@@ -4,9 +4,9 @@
   "description": "CSS Starter Kit",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass --output-style expanded ./scss/themes/simple.scss ./css/simple.css",
-    "watch": "node-sass --output-style expanded -w -r ./scss/themes/simple.scss ./css/simple.css",
-    "serve": "lite-server -c config/bs-config.json",
+    "build": "node-sass --output-style expanded -o ./css ./scss/themes/*.scss",
+    "watch": "node-sass --output-style expanded -w -r -o ./css ./scss/themes/*.scss ./css",
+    "serve": "lite-server -c bs-config.json",
     "start": "npm run build && concurrently \"npm run watch\" \"npm run serve\""
   },
   "keywords": [
