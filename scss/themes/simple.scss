@@ -1,62 +1,55 @@
-// fonts
-// -------------------------------------//
-$font-family: 'Arial', sans-serif;
-$font-weight: normal !default;
-$font-size: 90 !default;
-$font-base: 16 * ($font-size/100) !default;
-$line-height: 1.65 !default;
+$base-font-percent: 90; // base percent of document font size
 
-
-// spacing
-// -------------------------------------//
-$v-padding: .6rem;
-$h-padding: .8rem;  
-$v-margin: .6rem;
-$h-margin: .8rem;
-
-
-// color palette
-// -------------------------------------//
-$heading-color: #222;
+/* content */
+$base-font-family: "Arial", sans-serif;
+$base-font-weight: normal;
+$font-base: 16 * ($base-font-percent/100);
+$small-caps-color: gray;
 $copy-color: #444;
 
-// buttons
-// -------------------------------------//
-$button-background-color: #eeeeee;  
-$button-border-color: #929292;  
-$button-border-style: solid;  
-$button-border-width:thin;  
-
-// headers
-// -------------------------------------//
-$headings: (
-    h1: round($font-base * 4), 
-    h2: round($font-base * 3.3333), 
-    h3: round($font-base * 2.6667), 
-    h4: round($font-base * 2), 
-    h5: round($font-base * 1.3333), 
+/* headings */
+$heading-color: #222;
+$heading-font-family: "Arial", san-serif;
+$heading-font-sizes: (
+    h1: round($font-base * 4),
+    h2: round($font-base * 3.3333),
+    h3: round($font-base * 2.6667),
+    h4: round($font-base * 2),
+    h5: round($font-base * 1.3333),
     h6: round($font-base * 1.1667)
-) !default;
+);
 
-// citations
-// -------------------------------------//
-$cite-display: block !default;
-$cite-align: right !default;
-$cite-font-size: inherit !default;
+$line-height: 1.65;
+$small-caps-weight: 600;
+$small-print-size: 0.65em;
 
-// small caps
-// -------------------------------------//
-$smcps-color: gray !default;
-$smcps-weight: 600 !default;
-$small-print-size: 65% !default;
+/* whitespace */
+$v-padding: 0.6rem;
+$h-padding: 0.8rem;
+$v-margin: 0.6rem;
+$h-margin: 0.8rem;
 
-// fieldsets
-// -------------------------------------//
-$fieldset-border-color: #c5c5c5 !default;
-$fieldset-border-style: solid !default;
-$fieldset-border-width: thin !default;
+/* button styles */
+$button-background-color: #eeeeee;
+$button-border-color: #929292;
+$button-border-style: solid;
+$button-border-width: thin;
 
+/* input styles */
+$input-background-color: #ffffff;
+$input-border-color: #929292;
+$input-border-style: solid;
+$input-border-width: thin;
 
-// import styles
-// this must come last
-@import '../base/index';
+/* cite styles */
+$cite-display: block;
+$cite-align: right;
+$cite-font-size: inherit;
+
+/* fieldset styles */
+$fieldset-border-color: #c5c5c5;
+$fieldset-border-style: solid;
+$fieldset-border-width: thin;
+
+/* import styles, must come last */
+@import "../base/_index";

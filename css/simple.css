@@ -1,3 +1,11 @@
+/* content */
+/* headings */
+/* whitespace */
+/* button styles */
+/* input styles */
+/* cite styles */
+/* fieldset styles */
+/* import styles, must come last */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+/* global */
 html {
   font-weight: normal;
   font-family: "Arial", sans-serif;
@@ -33,27 +42,61 @@ html {
 }
 
 body {
-  word-wrap: break-word;
+  color: #444;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  color: #444;
+  word-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6, p, pre, header, footer, main {
+p, header, footer, main {
   padding: 0.6rem 0.8rem;
 }
 
-fieldset {
-  margin: 0.6rem 0.8rem;
+/* content */
+small {
+  font-size: 0.65em;
 }
 
+abbr {
+  color: gray;
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  -ms-font-variant: small-caps;
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+abbr[title]:hover {
+  cursor: help;
+}
+
+/* hyphenation */
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* headings */
 h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility;
+  font-family: "Arial", san-serif;
+  color: #222;
   line-height: 1;
   margin-top: 0;
-  color: #222;
+  padding: 0.6rem 0.8rem;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -84,39 +127,6 @@ h5 {
 h6 {
   font-size: 1.18056rem;
   margin-top: 0.29514rem;
-}
-
-small {
-  font-size: 65%;
-}
-
-input,
-abbr,
-acronym,
-blockquote,
-code,
-kbd,
-q,
-samp,
-var {
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-abbr {
-  -webkit-font-variant: small-caps;
-  -moz-font-variant: small-caps;
-  -ms-font-variant: small-caps;
-  font-variant: small-caps;
-  font-weight: 600;
-  text-transform: lowercase;
-  color: gray;
-}
-
-abbr[title]:hover {
-  cursor: help;
 }
 
 svg, img, video, audio, iframe, canvas {
@@ -205,22 +215,27 @@ cite {
   padding: 0.6rem 0.8rem;
 }
 
-label,
 button,
-textarea,
+input,
+label,
 meter,
 progress,
 select,
-input:not([type='radio']) {
+textarea {
   display: inline-block;
   font-size: 1rem;
-  padding: 0.3rem 0.4rem;
   margin: 0.3rem 0.4rem;
+  padding: 0.3rem 0.4rem;
   vertical-align: middle;
 }
 
 textarea {
   vertical-align: top;
+}
+
+input {
+  border: solid thin #929292;
+  background-color: #ffffff;
 }
 
 button {
@@ -230,6 +245,7 @@ button {
 
 fieldset {
   border: solid thin #c5c5c5;
+  margin: 0.6rem 0.8rem;
   padding: 0.6rem 0.8rem;
 }
 
@@ -241,16 +257,17 @@ fieldset > legend:empty {
   padding: 0;
 }
 
+code {
+  font-family: monospace;
+  white-space: pre;
+}
+
 pre {
+  padding: 0.6rem 0.8rem;
   white-space: pre;
 }
 
 pre > code {
   word-wrap: normal;
   white-space: pre-wrap;
-}
-
-code {
-  white-space: pre;
-  font-family: monospace;
 }

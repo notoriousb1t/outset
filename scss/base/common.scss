@@ -1,73 +1,44 @@
-// $Global
-// -------------------------------------//
-
+/* global */
 html {
-    font-weight: $font-weight;
-    font-family: $font-family;
-    font-size: #{$font-size + '%'};
+    font-weight: $base-font-weight;
+    font-family: $base-font-family;
+    font-size: #{$base-font-percent + '%'};
     line-height: $line-height;
 } 
 
 body {
-    word-wrap: break-word; 
+    color: $copy-color; 
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    color: $copy-color; 
+    word-wrap: break-word; 
 }
 
-
-// Content padding
-// -------------------------------------//
-
-h1, h2, h3, h4, h5, h6, p, pre, header, footer, main {
+p, header, footer, main {
     padding: $v-padding $h-padding;
 }
 
-fieldset {
-    margin: $v-margin $h-margin; 
-}
-
-// $Headings
-// https://github.com/typeplate/starter-kit/issues/27
-// -------------------------------------//
-// Props to Harry Roberts for this trick.
-//
-// @notes
-// optimizeLegibility           Enables ligatures and kerning
-// single line height           Fixes large spaces when a heading wraps two lines
-
-h1, h2, h3, h4, h5, h6 {
-    text-rendering: optimizeLegibility;
-    line-height: 1;
-    margin-top: 0;
-    color: $heading-color;
-}
-
-// $Headings
-// http://codepen.io/grayghostvisuals/pen/IKsbw
-// -------------------------------------//
-
-@each $h, $size in $headings {
-    #{$h} { 
-        font-size: #{$size/$font-base}rem;
-        margin-top: #{$size/($font-base * 4)}rem;
-    }
-}
-
-// $Legal Text
-// -------------------------------------//
-
+/* content */
 small {
     font-size: $small-print-size;
 }
 
-// $Hyphenation
-// -------------------------------------//
-// @notes;
-// http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+abbr { 
+    color: $small-caps-color;
+    -webkit-font-variant: small-caps;
+    -moz-font-variant: small-caps;
+    -ms-font-variant: small-caps;
+    font-variant: small-caps;
+    font-weight: $small-caps-weight;
+    text-transform: lowercase;
 
+    &[title]:hover {
+        cursor: help;
+    }
+}
+
+/* hyphenation */
 input,
 abbr,
 acronym,
@@ -81,20 +52,4 @@ var {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-}
-
-// $Smallcaps
-// -------------------------------------//
-
-abbr { 
-    -webkit-font-variant: small-caps;
-    -moz-font-variant: small-caps;
-    -ms-font-variant: small-caps;
-    font-variant: small-caps;
-    font-weight: $smcps-weight;
-    text-transform: lowercase;
-    color: $smcps-color;
-    &[title]:hover {
-        cursor: help;
-    }
 }

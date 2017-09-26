@@ -1,4 +1,10 @@
+code { 
+    font-family: monospace;
+    white-space: pre;
+}
+
 pre { 
+    padding: $v-padding $h-padding;
     white-space: pre;
 
     > code {
@@ -7,7 +13,3 @@ pre {
     }
 }
 
-code { 
-    white-space: pre;
-    font-family: monospace;
-}

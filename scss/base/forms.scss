@@ -1,14 +1,14 @@
-label,
 button,
-textarea,
+input,
+label,
 meter,
 progress,
 select,
-input:not([type='radio']) {
+textarea {
     display: inline-block;
     font-size: 1rem;
-    padding: #{$v-padding / 2} #{$h-padding / 2};
     margin: #{$v-margin / 2} #{$h-margin / 2};
+    padding: #{$v-padding / 2} #{$h-padding / 2};
     vertical-align: middle;
 }
 
@@ -17,13 +17,19 @@ textarea {
     vertical-align: top;
 }
 
+input {
+    border: $input-border-style $input-border-width $input-border-color;
+    background-color: $input-background-color;
+} 
+
 button {
     border: $button-border-style $button-border-width $button-border-color;
     background-color: $button-background-color;
-}
+} 
  
 fieldset { 
     border: $fieldset-border-style $fieldset-border-width $fieldset-border-color; 
+    margin: $v-margin $h-margin; 
     padding: #{$v-padding} #{$h-padding};
 
     > legend {
