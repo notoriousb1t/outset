@@ -18,7 +18,9 @@ This project is not meant to be a library like Bootstrap that is rarely customiz
 
 Currently these are the available themes:
 
- - **simple**: Base CSS styles that improve upon the look and feel of HTML without being overly opinionated.  It uses Arial, a system font, and is built to be highly readable.
+ - **Simple**: It has base CSS styles that improve upon the look and feel of HTML without being overly opinionated.  It uses Arial, a system font, and is built to be highly readable.
+ 
+  - **Submarine**: It has styles inspired by Chrome DevTools.  This is meant to be used for browser extensions or for user interfaces that need a lot of form elements packed into a very small space.  It uses PT Sans, a common san-serif font for body and heading text.  It uses Source Code Pro for monospaced text.  It is optimized for high density form elements.
  
  To start debugging, run the following on the command line:
  
