@@ -1,16 +1,15 @@
-// base percent of document font size
-$base-font-percent: 90; 
-
 //* content */
-$base-font-family: "Arial", sans-serif;
+$body-background: #fcfcfc;
+$base-font-family: 'Arial', sans-serif;
 $base-font-weight: normal;
-$font-base: 16 * ($base-font-percent/100);
+$mono-font-family: monospace;
+$font-base: 14.4;
 $small-caps-color: gray;
 $copy-color: #444;
 
 //* headings */
 $heading-color: #222;
-$heading-font-family: "Arial", san-serif;
+$heading-font-family: 'Arial', san-serif;
 $heading-font-sizes: (
     h1: round($font-base * 4),
     h2: round($font-base * 3.3333),
@@ -48,9 +47,10 @@ $cite-align: right;
 $cite-font-size: inherit;
 
 //* fieldset styles */
+$fieldset-background: #fcfcfc;
 $fieldset-border-color: #c5c5c5;
 $fieldset-border-style: solid;
 $fieldset-border-width: thin;
 
 //* import styles, must come last */
-@import "../base/_index";
+@import '../base/_index';

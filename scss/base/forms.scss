@@ -28,6 +28,7 @@ button {
 } 
  
 fieldset { 
+    background: $fieldset-background;
     border: $fieldset-border-style $fieldset-border-width $fieldset-border-color; 
     margin: $v-margin $h-margin; 
     padding: #{$v-padding} #{$h-padding};

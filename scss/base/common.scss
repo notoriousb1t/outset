@@ -2,12 +2,13 @@
 html {
     font-weight: $base-font-weight;
     font-family: $base-font-family;
-    font-size: #{$base-font-percent + '%'};
+    font-size: #{$font-base}px;
     line-height: $line-height;
 } 
 
 body {
-    color: $copy-color; 
+    background: $body-background;
+    color: $copy-color;    
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;

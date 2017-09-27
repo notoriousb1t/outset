@@ -1,5 +1,5 @@
 code { 
-    font-family: monospace;
+    font-family: $mono-font-family;
     white-space: pre;
 }
 
@@ -12,4 +12,3 @@ pre {
         white-space: pre-wrap;
     }
 }
-
