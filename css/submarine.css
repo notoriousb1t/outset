@@ -284,12 +284,14 @@ fieldset > legend {
 }
 
 fieldset {
-  margin: 5px 5px;
   padding-top: 2.5rem;
   position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 section {
+  margin: 5px 5px;
+  padding: 4px 8px;
   border-bottom: solid thin #cccccc;
 }
 
@@ -303,16 +305,16 @@ select {
 }
 
 select {
-  background: none;
-  border: none;
-  border-radius: 0;
-  outline: none;
   position: relative;
 }
 
 select::after {
   border-bottom: solid thin #ccc;
   width: 100%;
+}
+
+button {
+  outline: none;
 }
 
 textarea {
@@ -328,6 +330,7 @@ textarea {
 section {
   background: #e8e8e8;
   border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 table {
