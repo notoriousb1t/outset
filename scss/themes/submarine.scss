@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=PT+Sans|Source+Code+Pro';
 
 //* content */
-$body-background: #d4d4d4;
+$body-background: white;
 $base-font-family: 'PT Sans', sans-serif;
 $base-font-weight: normal;
 $mono-font-family: 'Source Code Pro', monospace;
@@ -117,12 +117,6 @@ textarea {
 :-webkit-autofill {
     // find a better way
     box-shadow: 0 0 0px 1000px white inset;
-}
-
-section {
-    background: #e8e8e8;
-    border-radius: 5px;
-    box-shadow: $shadow-1;
 }
 
 table {
